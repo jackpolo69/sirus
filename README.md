@@ -1,2 +1,2 @@
 # liri
-![logo]: (/images/spotifyThis.png)
+[logo]: /images/spotifyThis.png
