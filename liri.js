@@ -32,9 +32,10 @@ function handleSearch() {
     for (var i = 3; i < process.argv.length; i++) {
         whatToSearch += process.argv[i];
     }
-    console.log ("whatToSearch; " + whatToSearch);
+    console.log("whatToSearch; " + whatToSearch);
     return whatToSearch
 }
+
 function spotifySong(songName) {
     var spotify = new Spotify({
         id: keys.spotify.id,

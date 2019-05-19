@@ -1,2 +1,2 @@
 # liri
-[logo]: /images/spotifyThis.png
+<img src= "images/spotifyThis.png">
