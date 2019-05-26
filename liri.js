@@ -30,10 +30,10 @@ function handleCommand(whatToSearch) {
 
 function handleSearch() {
     for (var i = 3; i < process.argv.length; i++) {
-        whatToSearch += process.argv[i];
+        whatToSearch += process.argv[i] + " "
     }
     console.log("whatToSearch; " + whatToSearch);
-    return whatToSearch
+    return whatToSearch.trim()
 }
 
 function spotifySong(songName) {
@@ -44,7 +44,7 @@ function spotifySong(songName) {
     spotify.search({ type: 'track', query: songName }, function (err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
-        }
+        } 
 
         var tracks = data.tracks.items
         for (var i = 0; i < tracks.length; i++) {
